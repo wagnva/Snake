@@ -83,4 +83,9 @@ main #game-table {
       main #game-table tbody td[data-foodRare="true"] {
         background: #8bc9e4; }
 
+footer {
+  display: block; }
+  footer div {
+    float: right; }
+
 /*# sourceMappingURL=index.css.map */
