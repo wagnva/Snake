@@ -1,0 +1,86 @@
+/* */
+nav:after {
+  content: "";
+  clear: both;
+  display: block; }
+
+/* */
+body {
+  margin: 0px; }
+
+nav {
+  width: 100%;
+  border: none;
+  margin-top: 3em; }
+  nav h1 {
+    margin: 0;
+    float: left;
+    padding-top: 15px; }
+  nav ul {
+    float: right;
+    margin: 0; }
+    nav ul li {
+      display: inline-block;
+      margin-top: 15px;
+      padding-left: 35px; }
+      nav ul li:first-child {
+        padding-left: 0; }
+      nav ul li a {
+        font-size: 4rem;
+        color: #61B6DB;
+        text-decoration: none; }
+        nav ul li a:hover {
+          color: #f6d678; }
+
+main.container {
+  margin-top: 5em; }
+  main.container .game-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-75%);
+    display: none; }
+    main.container .game-overlay .game-overlay-title {
+      font-size: 5rem;
+      color: #61B6DB;
+      text-align: center;
+      margin: 0; }
+    main.container .game-overlay .game-overlay-button {
+      border-radius: 0;
+      margin: 0 auto;
+      margin-top: 3em;
+      display: block;
+      background: #61B6DB; }
+  main.container .game-lost-visible {
+    display: inline-block; }
+  main.container .game-score {
+    position: absolute;
+    top: 2%;
+    left: 2%; }
+    main.container .game-score .game-score-msg {
+      color: #61B6DB; }
+  main.container .game-start {
+    display: block; }
+
+main #game-table {
+  width: 100%;
+  max-width: 100%;
+  border-collapse: collapse; }
+  main #game-table tbody {
+    background: black;
+    width: 100%;
+    max-width: 100%; }
+    main #game-table tbody td {
+      border: none;
+      padding: 0;
+      border: 0; }
+      main #game-table tbody td[data-snake="true"] {
+        background: #ffedcc; }
+      main #game-table tbody td[data-snakehead="true"] {
+        background: #ffc966; }
+      main #game-table tbody td[data-food="true"] {
+        background: #ff9999; }
+      main #game-table tbody td[data-foodRare="true"] {
+        background: #8bc9e4; }
+
+/*# sourceMappingURL=index.css.map */

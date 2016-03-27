@@ -1,0 +1,45 @@
+<html>
+<head>
+    <title>Snake</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    
+<nav>
+   <div class="container">
+        <h1>Snake Game</h1>
+        <ul>
+            <li><a href="https://github.com/wagnva/A_Star_Javascript">Source</a></li>
+        </ul>
+    </div>
+</nav>
+    
+<main class="container">
+   
+   <div class="game-lost game-overlay">
+       <h4 class="game-lost-msg game-overlay-title">Game Lost</h4>
+       <button class="game-lost-restart button-primary game-overlay-button">Try Again! </button>
+   </div>
+   
+   <div class="game-score">
+       <h5 class="game-score-msg">Score: <span>0</span></h5>
+   </div>
+   
+   <div class="game-start game-overlay">
+       <h4 class="game-overlay-title">Snake</h4>
+       <button class="button-primary game-overlay-button">Play!</button>
+   </div>
+   
+   <table id="game-table">
+       <tbody>
+           
+       </tbody>
+   </table>
+   
+</main>
+    
+    <script src="https://code.jquery.com/jquery-2.2.1.min.js"></script>
+    <script src="game.js"></script>
+</body>
+</html>

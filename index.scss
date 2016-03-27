@@ -1,0 +1,121 @@
+/* */
+
+%clearfix:after{
+    content: "";
+    clear: both;
+    display: block;
+}
+
+/* */
+
+body{
+    margin: 0px;
+}
+
+nav{
+    @extend %clearfix;
+    width: 100%;
+    border: none;
+    margin-top: 3em;
+    h1{
+        margin: 0;
+        float: left;
+        padding-top: 15px;
+    }
+    ul{
+        float: right;
+        margin: 0;
+        li{
+            display: inline-block;
+            margin-top: 15px;
+            padding-left: 35px;
+            &:first-child{
+                padding-left: 0;
+            }
+            a{
+                font-size: 4rem;
+                color: #61B6DB;
+                text-decoration: none;
+                &:hover{
+                    color: darken(#FBECC0, 15);
+                }
+            }
+        }
+    }
+}
+
+main.container{
+    margin-top: 5em;
+    
+    .game-overlay{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translateX(-50%) translateY(-75%);
+        display: none;
+        
+        .game-overlay-title{
+            font-size: 5rem;
+            color: #61B6DB;
+            text-align: center;
+            margin: 0;
+        }
+        
+        .game-overlay-button{
+            border-radius: 0;
+            margin: 0 auto;
+            margin-top: 3em;
+            display: block;
+            background: #61B6DB;
+        }
+    }
+    .game-lost-visible{
+        display: inline-block;
+    }
+    
+    .game-score{
+        position: absolute;
+        top: 2%;
+        left: 2%;
+        .game-score-msg{
+            color: #61B6DB;
+        }
+    }
+    
+    .game-start{
+        display: block;
+    }
+}
+
+main #game-table{
+    width: 100%;
+    max-width: 100%;
+    border-collapse: collapse;
+    
+    tbody{
+        background: black;
+        width: 100%;
+        max-width: 100%;
+        td{
+            border: none;
+            padding: 0;
+            border: 0;
+            
+            &[data-snake="true"]{
+                background: lighten(orange, 40);
+            }
+            
+            &[data-snakehead="true"]{
+                background: lighten(orange, 20);
+            }
+            
+            &[data-food="true"]{
+                background: lighten(red, 30);
+            }
+            
+            &[data-foodRare="true"]{
+                background: lighten(#61B6DB, 10);
+            }
+        }
+    }
+}
