@@ -122,7 +122,10 @@ main #game-table{
 
 footer{
     display: block;
-    div{
+    .left{
+        float: left;
+    }
+    .right{
         float: right;
     }
 }
