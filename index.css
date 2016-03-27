@@ -85,7 +85,9 @@ main #game-table {
 
 footer {
   display: block; }
-  footer div {
+  footer .left {
+    float: left; }
+  footer .right {
     float: right; }
 
 /*# sourceMappingURL=index.css.map */
